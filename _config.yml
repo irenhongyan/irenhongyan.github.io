@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Qpowe's Dirty life
-subtitle: Qpowe's blog
+title: RHY's Dirty life
+subtitle: RHY's blog
 description: 
-author: Qpowe
+author: irenhongyan
 language: zh-CN
 timezone: Asia/Chongqing
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://Qpowe.github.io
+url: https://irenhongyan.github.io
 root: /
 permalink: post/:title.html
 permalink_defaults:
@@ -97,9 +97,9 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:Qpowe/Qpowe.github.io.git
+  repo: git@github.com:irenhongyan/irenhongyan.github.io.git
   branch: master
-  name: Qpowe
+  name: irenhongyan
   email: 2124483716@qq.com
 
 include: 
