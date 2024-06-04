@@ -28,7 +28,7 @@ jobs:
         git config --global user.email '2124483716@qq.com'
         npm i -g hexo-cli
         npm i
-        git clone git@github.com:blinkfox/hexo-theme-matery.git themes/matery
+        git clone https://github.com/blinkfox/hexo-theme-matery.git themes/matery
         cp source/_data/matery.yml themes/matery/_config.yml
     - name: deploy to github 
       run: |
