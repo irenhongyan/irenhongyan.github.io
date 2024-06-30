@@ -12,10 +12,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js 16.20.2
+    - name: Use Node.js v18.20.3
       uses: actions/setup-node@v1
       with:
-        node-version: '16.20.2'
+        node-version: '18.20.3'
     - name: prepare build env
       env:
         GH_ACTION_DEPLOY_KEY: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
