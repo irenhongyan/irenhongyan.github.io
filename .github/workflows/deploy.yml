@@ -12,10 +12,10 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js 20.x
+    - name: Use Node.js 10.x
       uses: actions/setup-node@v1
       with:
-        node-version: '20.x'
+        node-version: '10.x'
     - name: prepare build env
       env:
         GH_ACTION_DEPLOY_KEY: ${{ secrets.GH_ACTION_DEPLOY_KEY }}
@@ -28,7 +28,7 @@ jobs:
         git config --global user.email '2124483716@qq.com'
         npm i -g hexo-cli
         npm i
-        git clone https://github.com/blinkfox/hexo-theme-matery.git themes/matery
+        git clone -b v1.2.2 git@github.com:blinkfox/hexo-theme-matery.git themes/matery
         cp source/_data/matery.yml themes/matery/_config.yml
     - name: deploy to github 
       run: |
