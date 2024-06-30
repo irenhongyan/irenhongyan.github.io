@@ -5,6 +5,7 @@ categories: # 只有一个
 tags: # 有好多
 keywords: # seo用
 top:   # 是否置顶
+toc: false # 是否生成目录
 cover: #是否加入滚翻图
 summary: # 如果加密了，那一定要用摘要把默认的去掉
 password: # SHA256 加密后的密码
