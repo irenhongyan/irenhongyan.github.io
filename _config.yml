@@ -93,6 +93,11 @@ search:
   path: search.xml
   field: post
 
+# 文章名中文转拼音插件
+permalink_pinyin:
+  enable: true # 启用插件
+  separator: '-' # 分词符，将使用此符号分隔两个汉字间的拼音
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
