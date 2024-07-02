@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>RHY&#39;s Dirty life</title>
+  
+  <subtitle>RHY&#39;s blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://irenhongyan.github.io/"/>
+  <updated>2024-07-02T06:37:40.760Z</updated>
+  <id>https://irenhongyan.github.io/</id>
+  
+  <author>
+    <name>irenhongyan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nc奇淫技巧</title>
+    <link href="https://irenhongyan.github.io/post/nc-qi-yin-ji-qiao.html"/>
+    <id>https://irenhongyan.github.io/post/nc-qi-yin-ji-qiao.html</id>
+    <published>2024-07-02T06:28:39.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="扫描端口"><a href="#扫描端口" class="headerlink" title="扫描端口"></a>扫描端口</h1><pre class="line-numbers language-bash"><code class="language-bash">nc -zv 127.0.0.1 80-65535 2<span class="token operator">></span><span class="token operator">&amp;</span>1 <span class="token operator">|</span> <span class="token function">grep</span> <span class="token string">"succeeded"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h1 id="传输文件"><a href="#传输文件" class="headerlink" title="传输文件"></a>传输文件</h1><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 接收方监听端口并将文件内容重定向到文件中</span>nc -l 127.0.0.1 1234 <span class="token operator">></span> filename<span class="token comment" spellcheck="true"># 发送方将文件重定向到服务端监听的端口中</span>nc 127.0.0.1 1234 <span class="token operator">&lt;</span> filename<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;扫描端口&quot;&gt;&lt;a href=&quot;#扫描端口&quot; class=&quot;headerlink&quot; title=&quot;扫描端口&quot;&gt;&lt;/a&gt;扫描端口&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bas
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux常用命令替代</title>
+    <link href="https://irenhongyan.github.io/post/linux-chang-yong-ming-ling-ti-dai.html"/>
+    <id>https://irenhongyan.github.io/post/linux-chang-yong-ming-ling-ti-dai.html</id>
+    <published>2024-07-02T04:53:41.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Linux常用命令替代版"><a href="#Linux常用命令替代版" class="headerlink" title="Linux常用命令替代版"></a>Linux常用命令替代版</h1><ol><li><p><strong>bandwhich</strong> - 是一个网络带宽利用率监控工具。它可以帮助用户识别哪些进程和主机正在消耗网络带宽。</p></li><li><p><strong>bat</strong> - 是 <code>cat</code> 命令的一个克隆版本，但增加了语法高亮、Git 集成和其他特性。它用于在终端中查看文件内容，同时提供了更丰富的视觉输出。</p></li><li><p><strong>delta</strong> - 主要用于比较 Git 文件差异的工具，提供语法高亮和其他视觉改进，使得差异更加容易理解。</p></li><li><p><strong>dust</strong> - 是 <code>du</code> 命令的更高级版本，用于显示磁盘使用情况。它以图形方式显示目录的大小，使得用户可以快速识别占用空间最大的目录。</p></li><li><p><strong>exa</strong> - 是 <code>ls</code> 命令的现代替代品，提供了更多的特性和更好的默认输出。它支持颜色化输出和Git信息等。</p></li><li><p><strong>fd</strong> - 是 <code>find</code> 命令的简单、快速和用户友好的替代品。它提供了一种更快和更直观的方式来查找文件和目录。</p></li><li><p><strong>fzf</strong> - 是一个通用的命令行模糊查找器，可以与任何列表一起使用，如文件、命令历史记录、进程等，以提供快速的交互式搜索功能。</p></li><li><p><strong>joshuto</strong> - 是一个终端文件管理器，它尝试模仿 <code>ranger</code> 文件管理器的视觉布局，提供了一个简单的方式来浏览和管理文件系统。</p></li><li><p><strong>jq</strong> - 是一个轻量级且灵活的命令行 JSON 处理器，允许用户以非常灵活的方式解析、过滤、映射和输出 JSON 数据。</p></li><li><p><strong>procs</strong> - 是 <code>ps</code> 命令的现代替代品，用于显示系统进程信息。它提供了更丰富的输出和更好的用户体验。</p></li><li><p><strong>rg</strong> (Ripgrep) - 是一个递归搜索文本的工具，旨在快速搜索大型文件系统。它比许多其他搜索工具更快，因为它默认忽略.gitignore中指定的文件和目录。</p></li></ol><p>这些工具大多数都旨在提供比传统 Unix 命令更好的用户体验或更高的性能。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Linux常用命令替代版&quot;&gt;&lt;a href=&quot;#Linux常用命令替代版&quot; class=&quot;headerlink&quot; title=&quot;Linux常用命令替代版&quot;&gt;&lt;/a&gt;Linux常用命令替代版&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;bandwhich&lt;/st
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo常用操作笔记</title>
+    <link href="https://irenhongyan.github.io/post/hexo-chang-yong-cao-zuo-bi-ji.html"/>
+    <id>https://irenhongyan.github.io/post/hexo-chang-yong-cao-zuo-bi-ji.html</id>
+    <published>2024-06-30T10:27:21.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><ol><li>安装nodejs <a href="https://nodejs.org/zh-cn" target="_blank" rel="noopener">nodejs官网</a></li><li>配置国内镜像 <a href="https://code-nav.top/article/1004" target="_blank" rel="noopener">npm使用国内淘宝镜像（最新地址）</a></li><li>全局安转hexo <code>npm install -g hexo-cli</code></li><li>安装依赖 <code>npm install</code></li><li>安装主题 参考 <code>.github/deploy.yml</code> 文件 <code>prepare build env</code> 是通过github action 自动将本项目打包通过gitub pages进行部署的命令，将主题克隆到themes目录</li></ol><h1 id="编写文章"><a href="#编写文章" class="headerlink" title="编写文章"></a>编写文章</h1><ol><li>创建文章 <code>hexo new post 博客标题</code></li><li>本地预览 <code>hexo server</code></li></ol><h1 id="发布部署"><a href="#发布部署" class="headerlink" title="发布部署"></a>发布部署</h1><p>由于配置了github action 只需要提交代码即可</p><ol><li><code>git pull</code> 拉取最新代码</li><li><code>git add . &amp;&amp; git commit -m &quot;&quot;</code> 提交代码</li><li><code>git push</code> 推送到github</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;环境搭建&quot;&gt;&lt;a href=&quot;#环境搭建&quot; class=&quot;headerlink&quot; title=&quot;环境搭建&quot;&gt;&lt;/a&gt;环境搭建&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;安装nodejs &lt;a href=&quot;https://nodejs.org/zh-cn&quot; target=&quot;_bla
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git克隆指定秘钥</title>
+    <link href="https://irenhongyan.github.io/post/git-ke-long-zhi-ding-mi-yao.html"/>
+    <id>https://irenhongyan.github.io/post/git-ke-long-zhi-ding-mi-yao.html</id>
+    <published>2024-06-30T09:28:00.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<p>其实我们往往会遇到这样一个问题<br>打个比方：</p><blockquote><p>公司邮箱是：<a href="mailto:xxx@a.com">xxx@a.com</a><br>个人邮箱：<a href="mailto:xxx@b.com">xxx@b.com</a> &amp; <a href="mailto:xxx@c.com">xxx@c.com</a><br>我们分别有：公司git仓库 / github仓库 / gitee仓库<br>三个邮箱分别有：id_a_rsa / id_b_rsa / id_c_rsa 三个密钥<br>三个仓库对应三个不同的邮箱</p></blockquote><p>那么问题来了，我们这三个仓库都需要用ssh 方式来操作git。咋办？</p><p>ssh连接默认用的都是 /.ssh目录下的 id_rsa这个密钥，那么我们能不能指定不同的仓库用不同的密钥呢？</p><h1 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h1><p>修改/创建 /.ssh/config文件<br>例：</p><pre class="line-numbers language-bash"><code class="language-bash">Host github.com <span class="token comment" spellcheck="true">#git项目里面的域名</span>  User <span class="token function">git</span>                        <span class="token comment" spellcheck="true"># 克隆用户</span>  Hostname github.com  PreferredAuthentications publickey  IdentityFile /opt/aliyun_ssh_key/id_rsa <span class="token comment" spellcheck="true"># 私钥路径</span>  IdentitiesOnly <span class="token function">yes</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>这个方法怎么说呢，可行但是个人感觉成本有点高，每次复制git的ssh链接之后需要修改链接里对应的host<br>如果说你有多个github账号那就要拟定不同的host，其实蛮烦的，而且一旦账号多了可能记不住。<br>个人并不太喜欢这方法，但是永久性上来说，这是最好的</p><h1 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h1><p>这是我在网上搜了2天之后发现的<br>使用ssh-add命令将对应的key加入到高速缓存中<br>就以开头的例子为例：</p><pre class="line-numbers language-bash"><code class="language-bash">ssh-add id_a_rsassh-add id_b_rsassh-add id_c_rsa<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>然后 我们分别测试一下git的ssh链接</p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">ssh</span> -T git@github.com<span class="token function">ssh</span> -T git@gitee.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>看看结果吧～</p><p>如果不记得自己加入了哪些密钥，只需要使用ssh-add -l命令就可列出所有已加入高速缓存的密钥了<br>但是唯一的缺陷就是，这只是单次的，电脑重启之后，缓存就会失效，需要重新添加，当然也可以直接编写自动化脚本，每次重启电脑之后自动添加</p><blockquote><p>转载自 <a href="https://lunashu.org/git-clone-ssh-key/" target="_blank" rel="noopener">美兰十三的想疗院</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;其实我们往往会遇到这样一个问题&lt;br&gt;打个比方：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;公司邮箱是：&lt;a href=&quot;mailto:xxx@a.com&quot;&gt;xxx@a.com&lt;/a&gt;&lt;br&gt;个人邮箱：&lt;a href=&quot;mailto:xxx@b.com&quot;&gt;xxx@b.com&lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>判断回文</title>
+    <link href="https://irenhongyan.github.io/post/pan-duan-hui-wen.html"/>
+    <id>https://irenhongyan.github.io/post/pan-duan-hui-wen.html</id>
+    <published>2020-05-06T12:12:29.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<p>判断回文的四种方法：<br>1.使用数组，前后对应元素进行比较。<br>2.使用两个栈，一个栈正序存字符串，另一个栈逆序存，分别比较栈顶元素<br>3.使用一个栈存字符串的前半部分，读取后半部分元素并将其和栈顶元素比较<br>4.使用栈和队列，用栈存字符串的前半部分，用队列存字符串的后半部分，栈顶元素和队列中元素相比较</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;判断回文的四种方法：&lt;br&gt;1.使用数组，前后对应元素进行比较。&lt;br&gt;2.使用两个栈，一个栈正序存字符串，另一个栈逆序存，分别比较栈顶元素&lt;br&gt;3.使用一个栈存字符串的前半部分，读取后半部分元素并将其和栈顶元素比较&lt;br&gt;4.使用栈和队列，用栈存字符串的前半部分，用队列
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://irenhongyan.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>表达式求值算法二</title>
+    <link href="https://irenhongyan.github.io/post/biao-da-shi-qiu-zhi-suan-fa-er.html"/>
+    <id>https://irenhongyan.github.io/post/biao-da-shi-qiu-zhi-suan-fa-er.html</id>
+    <published>2020-05-06T12:01:49.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.中缀表达式转为后缀表达式（把转换后的后缀表达式存入字符数组中）：<br>（1）初始化栈。<br>（2）从左至右依次读取表达式中的字符并进行如下操作，直至整个表达式读完。<br>    ①若读入字符为运算数则将其存入字符数组，继续读入下一个字符，若是，将读入字符存入数组中，否则存入“ ”。<br>    ②若读入字符为运算符且栈空，则将读入字符如栈。<br>    ③若读入字符为“+”或“-”，当栈顶元素为“（”时，则将读入字符入栈；否则，将栈顶元素弹出并将弹出元素存入数组中，并将读入<br>        字符入栈。<br>    ④若读入字符为“<em>”或“/”，当栈顶元素为“</em>”或“/”时，则将栈顶元素弹出并将    弹出元素存入数组中，并将读入字符入栈;否则,将读入字符<br>        入栈。<br>    ⑤若读入字符为“（”，则将读入字符入栈。<br>    ⑥若读入字符为“）”，则将弹出栈顶元素，并将弹出的运算符存入数组中，直到栈顶元素为“（”，此时弹出栈顶元素。<br>    ⑦若读入字符为“#”，则break。<br>（3）表达式字符读入完成后，如果栈中不空，则将栈中字符全部弹出，存入数组中。<br>2.后缀表达式求值：<br>（1）从左至右读取数组中的元素，并进行如下操作：<br>    ①若读入字符为运算数，则将其入栈。<br>    ②若读入字符为运算符，则分两次弹出栈顶元素作为运算数进行运算，并将运算结果入栈。<br>（2）读取并返回栈顶元素即为表达式的运算结果。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.中缀表达式转为后缀表达式（把转换后的后缀表达式存入字符数组中）：&lt;br&gt;（1）初始化栈。&lt;br&gt;（2）从左至右依次读取表达式中的字符并进行如下操作，直至整个表达式读完。&lt;br&gt;    ①若读入字符为运算数则将其存入字符数组，继续读入下一个字符，若是，将读入字符存入数组中
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://irenhongyan.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>表达式求值算法一</title>
+    <link href="https://irenhongyan.github.io/post/biao-da-shi-qiu-zhi-suan-fa-yi.html"/>
+    <id>https://irenhongyan.github.io/post/biao-da-shi-qiu-zhi-suan-fa-yi.html</id>
+    <published>2020-05-06T11:59:38.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<p>1.置操作数栈为空栈，表达式起始符“#”为栈底元素。<br>2.依次读入表达式中的每个字符并进行如下判断，直至整个表达式读完且表达式求值运算完毕(即OPTR栈的栈顶元素和当前输入的字符均为“#”)。<br>（1）若读入字符是操作数，则将输入字符存入数组中，继续判断下一字符是否为操作数，若是，则继续存入数组中，若不是则将数组中的字符读出入OPND栈。<br>（2）若读入字符是运算符，则根据已存入二维数组中的两两运算符间优先级关系，将读入字符和OPTR栈的栈顶运算符比较优先权后作相应操作：<br>    ①若栈顶元素优先级低于读入字符的优先级，则将读入字符入OPTR栈，并读取下一个字符。<br>    ②若栈顶元素优先级等于读入字符的优先级，说明括号相遇，也就是读入字符    为“）”，栈顶元素为“（”，删除栈内括号“（”即可，则弹出<br>        OPTR栈顶的元素，并读取下一个字符。<br>    ③若栈顶元素优先级高于读入字符的优先级，需要先进行栈顶运算符运算，则弹出OPTR栈的栈顶元素作为运算符，分两次弹出OPND栈的栈顶元<br>        素作为操作数进行运算，并将运算结果压入栈中。<br>3.读取并返回OPND栈的栈顶元素即为表达式的运算结果。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1.置操作数栈为空栈，表达式起始符“#”为栈底元素。&lt;br&gt;2.依次读入表达式中的每个字符并进行如下判断，直至整个表达式读完且表达式求值运算完毕(即OPTR栈的栈顶元素和当前输入的字符均为“#”)。&lt;br&gt;（1）若读入字符是操作数，则将输入字符存入数组中，继续判断下一字符是
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://irenhongyan.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>借助队列对栈中元素排序</title>
+    <link href="https://irenhongyan.github.io/post/jie-zhu-dui-lie-dui-zhan-zhong-yuan-su-pai-xu.html"/>
+    <id>https://irenhongyan.github.io/post/jie-zhu-dui-lie-dui-zhan-zhong-yuan-su-pai-xu.html</id>
+    <published>2020-05-06T11:54:24.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<p>问题描述：<br>栈中元素无序，借助队列将栈中元素排序<br>解题思路：<br>1.初始化三个队列，分别为q1、q2、q3<br>2.读取栈顶元素，并作如下操作，直到栈空，最后结果保存在q3中。<br>（1）如果q1队尾元素小于等于栈顶元素，则弹出栈顶元素并将其存入q1队列中，并读取栈顶元素。<br>（2）如果q1队尾元素大于栈顶元素，则比较q2队尾元素和栈顶元素，若q2队尾元素小于等于栈顶元素，则弹出栈顶元素，并将栈顶元素存入q2队列中，并读取栈顶元素。<br>（3）如果q2队尾元素大于栈顶元素，则对各自有序的队列1和队列2中的元素进行排序，结果存入队列q3中，此时，q1、q2空，然后q1和q3进行交换，并读取栈顶元素。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;问题描述：&lt;br&gt;栈中元素无序，借助队列将栈中元素排序&lt;br&gt;解题思路：&lt;br&gt;1.初始化三个队列，分别为q1、q2、q3&lt;br&gt;2.读取栈顶元素，并作如下操作，直到栈空，最后结果保存在q3中。&lt;br&gt;（1）如果q1队尾元素小于等于栈顶元素，则弹出栈顶元素并将其存入q1队列
+      
+    
+    </summary>
+    
+    
+      <category term="数据结构" scheme="https://irenhongyan.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>第一次使用</title>
+    <link href="https://irenhongyan.github.io/post/di-yi-ci-shi-yong.html"/>
+    <id>https://irenhongyan.github.io/post/di-yi-ci-shi-yong.html</id>
+    <published>2020-05-05T11:22:35.000Z</published>
+    <updated>2024-07-02T06:37:40.760Z</updated>
+    
+    <content type="html"><![CDATA[<p>第一次使用，记录一下，哈哈哈，以后要多记录</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;第一次使用，记录一下，哈哈哈，以后要多记录&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
